@@ -120,6 +120,7 @@ CREATE TABLE traffic.way_node
 (
     node_id  uuid PRIMARY KEY,
     way_id     uuid PRIMARY KEY,
+    sequence_id int8 PRIMARY KEY,
     CONSTRAINT related_way
         FOREIGN KEY (way_id)
             REFERENCES traffic.way (way),
