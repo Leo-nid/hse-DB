@@ -1,0 +1,1 @@
+docker-compose --env-file ./settings.env -f docker-compose.yml ${@:1}

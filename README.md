@@ -1,2 +1,9 @@
 # hse-DB
-https://docs.google.com/document/d/1SmZa7ohqNsp7tWEfA05V_hf9flTuojLCQx7lLvaQOAE/edit#heading=h.31wb1z9ojy2r
+
+для запуска сервера базы данных:
+1) настроить settings.env
+2) ./deploy.sh up
+
+для загрузки в базу данных из .osm файла
+1) настроить psql_config.json
+2) example.ipynb
