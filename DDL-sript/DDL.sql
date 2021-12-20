@@ -1,5 +1,3 @@
-CREATE SCHEMA public;
-
 CREATE TABLE public.transport_type
 (
     transport_type_id int8 PRIMARY KEY,
