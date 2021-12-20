@@ -8,6 +8,7 @@ CREATE TABLE public.transport_model
 (
     transport_model_id int8 PRIMARY KEY,
     transport_type_id  int8,
+    name               TEXT,
     CONSTRAINT transport_type
         FOREIGN KEY (transport_type_id)
             REFERENCES public.transport_type (transport_type_id)
@@ -34,6 +35,7 @@ CREATE TABLE public.route
 (
     id          int8 PRIMARY KEY,
     relation_id int8,
+    name        TEXT,
     CONSTRAINT related_path
         FOREIGN KEY (relation_id)
             REFERENCES public.relation (id)
